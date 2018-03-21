@@ -46,19 +46,6 @@ Dalam dunia web, dokumen HTML yang benar memiliki dua bagian utama:
 - Head dan meta data
 - Body (badan HTML, bagian yang terlihat di halaman web)
 
-Cobalah buat file baru dengan nama coba.html
-
-![file-baru](assets/file-baru.png)
-
-Kemudian buka file coba.html itu dengan teks editor (gedit, notepad atau lainnya) dan copykan code html di atas tadi ke file ini
-
-![kode-html](assets/kode-html.png)
-
-Simpan file .html ini lalu buka dengan browser.
-
-Selamat mencoba :blush::blush:
-
----
 
 ---
 

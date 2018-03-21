@@ -142,7 +142,7 @@ Untuk dapat menambahkan CSS ke dalam HTML ada beberapa cara yaitu :
   ```
   Sebagai contoh :
   ```html
-  <p style="color: blue; margin: auto">
+  <p style="color: blue;">
     Ini adalah kalimat yang akan di custom menggunakan css.
   </p>
   <p>
@@ -202,7 +202,7 @@ Berikut cara menggunakan css-nya.
 ```css
 #namaId{
   color: blue;
-  margin: auto;
+  margin: 12ox;
 }
 ```
 ##### Menggunakan argumen class
@@ -219,7 +219,7 @@ Berikut cara menggunakan css pada tag div.
 ```css
 .namaClass{
   color: blue;
-  margin: auto;
+  margin: 12px;
 }
 ```
 Berikut contoh yang menggunakan tag selain div.
@@ -234,7 +234,7 @@ Berikut cara menggunakan css pada tag div.
 ```css
 p.namaClass{
   color: blue;
-  margin: auto;
+  margin: 12px;
 }
 ```
 #### Macam - macam Kostumisasi css
@@ -263,13 +263,13 @@ p.namaClass{
   Untuk margin yang menerima 1 inputan berarti dia melakukan kostumisasi margin di seluruh sisi pada konten bersangkutan (atas, bawah, kiri dan kanan).
   ```css
   .namaClass{
-    margin: auto;
+    margin: 12px;
   }
   ```
   Untuk margin yang menerima 2 inputan berarti dia melakukan kostumisasi margin di bagian atas-bawah dan kiri-kanan.
   ```css
   .namaClass{
-    margin: auto 1px;
+    margin: 12px 1px;
   }
   ```
   Untuk margin yang menerima 4 inputan berarti dia melakukan kostumisasi margin di seluruh sisi pada konten bersangkutan (atas, bawah, kiri dan kanan).
@@ -285,7 +285,7 @@ p.namaClass{
     text-align: 20% 40px 10% 30px;
   }
   ```
-- Mengubah warna background
+- Mengubah posisi text
   ```css
   .namaClass{
     text-align: center;
@@ -309,24 +309,7 @@ p.namaClass{
     padding: 70%;
   }
   ```
-- Mengatur warna border
-  ```css
-  .namaClass{
-    border-color: #00B289;
-  }
-  ```
-- Mengatur style border
-  ```css
-  .namaClass{
-    border-style: solid;
-  }
-  ```
-- Mengatur lebar border
-  ```css
-  .namaClass{
-    border-width: solid;
-  }
-  ```
+
 
 ---
 

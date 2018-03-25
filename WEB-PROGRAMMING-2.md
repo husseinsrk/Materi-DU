@@ -193,3 +193,5 @@ Glyphicons dapat digunakan dalam teks, tombol, toolbar, navigasi, bentuk, dll
 ```
 Link referensi icon:
 https://getbootstrap.com/docs/3.3/components/
+
+coming soon

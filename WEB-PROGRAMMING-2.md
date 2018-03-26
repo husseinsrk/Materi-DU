@@ -874,22 +874,31 @@ Membuat posisi aktif pada menu saat mouse di scroll kebawah
 - Mempercantik Navbar
 
 ```css
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-    .btn-lg {
-        width: 100%;
-        margin-bottom: 35px;
-    }
+ .navbar {
+      margin-bottom: 0;
+      background-color: #1e8df4;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
   }
-  @media screen and (max-width: 480px) {
-    .logo {
-        font-size: 150px;
-    }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #1e8df4 !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #1e8df4 !important;
+  }
 
-```
+  ```
+
 
 - Mempercantik Footer
 

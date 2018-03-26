@@ -6,6 +6,9 @@
 
 Bootstrap adalah suatu CSS framework interface (kerangka kerja tampilan) website yang sangat populer dikalangan web designer untuk memperindah tampilan website mereka. Kalo kalian tanya : Manfaatnya apa sih ? Jawaban singkatnya : Bootstrap memiliki teknologi ultra responsive yang membuat tampilan website lebih ringan ketika diload, otomatis menyesuaikan tampilan website ketika dibuka menggunakan device berbeda (PC,Laptop,maupun Smartphone) sehingga tampilan website akan optimal dimata pengunjung website/visitor. Dengan alasan tersebut,maka tidak sedikit web designer yang menggunakan framework ini. Nah, mungkin penjelasan diatas sudah bisa menerangkan pengertian dari Bootstrap itu sendiri.
 
+Kalian Bisa Download file Bootsrap di https://getbootstrap.com/docs/3.3/getting-started/
+atau bisa download di https://drive.google.com/open?id=11lSTG8rFqX9HKiSQ8flKRFQO4fqtesCf 
+
 #### Bootstrap Grids
 
 Bootstrap grid system memungkinkan hingga 12 kolom di halaman. 
@@ -350,6 +353,8 @@ Membuat slide gambar / tulisan
 ```
 
 #### Scrool Spy
+
+Membuat posisi aktif pada menu saat mouse di scroll kebawah
 
 ```html
  <!-- The scrollable area -->

@@ -378,6 +378,11 @@ Membuat posisi aktif pada menu saat mouse di scroll kebawah
 </body> 
 ```
 
+### Membuat Web Sederhana Dengan Bootsrap
+
+
+![1](assets/1.ong)
+
 
 
 

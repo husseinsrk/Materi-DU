@@ -385,6 +385,13 @@ Membuat posisi aktif pada menu saat mouse di scroll kebawah
 
 
 - Tambahkan Bootstrap CDN atau bisa menggunakan file yg sudah di download tadi 
+  
+  ```html
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  ```
+
 - kemudian kita akan membuat navbar fixed top
 
 ```html
@@ -691,4 +698,9 @@ Membuat posisi aktif pada menu saat mouse di scroll kebawah
 </footer>
 ```
 
+- Mempercantik Tampilan dengan css tambahan
+
+```html
+
+```
 

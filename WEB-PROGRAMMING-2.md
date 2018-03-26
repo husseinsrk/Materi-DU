@@ -875,7 +875,7 @@ Membuat posisi aktif pada menu saat mouse di scroll kebawah
 
 ```css
 
-  .navbar {
+ .navbar {
       margin-bottom: 0;
       background-color: #1e8df4;
       z-index: 9999;
@@ -897,6 +897,8 @@ Membuat posisi aktif pada menu saat mouse di scroll kebawah
       border-color: transparent;
       color: #1e8df4 !important;
   }
+
+  
 ```
 
 

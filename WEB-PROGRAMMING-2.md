@@ -380,7 +380,8 @@ Membuat posisi aktif pada menu saat mouse di scroll kebawah
 
 ### Membuat Web Sederhana Dengan Bootsrap
 
-[1](assets/1.png)
+![1](assets/1.png)
+
 
 
 - Tambahkan Bootstrap CDN atau bisa menggunakan file yg sudah di download tadi 
@@ -579,12 +580,71 @@ Membuat posisi aktif pada menu saat mouse di scroll kebawah
   </div>
 </div>
 
+```
+
+- Membuat Container (Price Section)
 
 
+```html
+
+
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>Harga</h2>
+    <h4>Harga yang kami tawarkan</h4>
+  </div><br>
+
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Front End</h1>
+        </div>
+        <div class="panel-footer">
+          <h3>Rp.200.000</h3>
+          <button class="btn btn-lg">Pesan</button>
+        </div>
+      </div>      
+    </div>     
+
+
+    
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Back End</h1>
+        </div>
+         <div class="panel-footer">
+          <h3>Rp.400.000</h3>
+          <button class="btn btn-lg">Pesan</button>
+        </div>
+      </div>      
+    </div>       
+
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Front & Back End</h1>
+        </div>
+        <div class="panel-footer">
+          <h3>Rp.800.000</h3>
+          <button class="btn btn-lg">Pesan</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
 
 ```
 
+- Membuat Maps Google Dengan Fitur Google Maps Api
 
+```html
+<div style="height:400px;width:100%;">
 
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1980.1155905376913!2d110.40782157629837!3d-6.982023487884449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b4ec52229d7%3A0xc791d6abc9236c7!2sUniversitas+Dian+Nuswantoro!5e0!3m2!1sid!2sid!4v1522050531204" width="1234px" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+  
+  </div>
+```
 
 

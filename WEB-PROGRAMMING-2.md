@@ -698,7 +698,274 @@ Membuat posisi aktif pada menu saat mouse di scroll kebawah
 </footer>
 ```
 
-- Mempercantik Tampilan dengan css tambahan
+#### Mempercantik Tampilan dengan css tambahan
+
+- Body
+
+```css
+
+  body {
+      font: sans-serif;
+      color: #818181;
+  }
+
+```
+
+
+
+- h1 dan h4
+
+```css
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;  /*Teks Agar Besar*/
+      color: #303030;
+      font-weight: 600; /*Ketebalan font*/
+  }
+  h4 {
+      font-size: 19px;
+      color: #303030;
+      font-weight: 400;
+  }  
+
+```
+
+
+
+- Jumbotron
+
+```css
+  .jumbotron{
+      background-color:#1e8df4;
+      color: #fff;
+      padding: 80px ;
+      font-family: sans-serif;
+  }
+```
+
+
+- Container
+
+```css
+.container-fluid {
+      padding: 60px 50px;
+  }
+```
+
+- Membuat backround tambahan
+
+```css
+ .bg-grey {
+      background-color: #f6f6f6;
+  }
+```
+
+
+
+- Membuat logo
+
+```css
+
+  .logo-small {
+      color: #1e8df4;
+      font-size: 50px;
+  }
+  .logo {
+      color: #1e8df4;
+      font-size: 200px;
+  }
+
+```
+
+
+
+- Carousel
+
+```css
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #1e8df4;
+  }
+  .carousel-indicators li {
+      border-color: #1e8df4;
+  }
+  .carousel-indicators li.active {
+      background-color: #1e8df4;
+  }
+```
+
+
+
+- Membuat thumbnail
+
+```css
+.thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  
+```
+
+
+- Membuat Item ,bagian testimoni
+
+  ```css
+.item h4 {
+      font-size: 19px;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  
+  ```
+
+
+
+- Membuat Panel
+
+  ```css
+
+  .panel {
+      border: 1px solid #1e8df4; 
+      border-radius:0 !important;
+  }
+
+
+  .panel-footer .btn:hover {
+      border: 1px solid #1e8df4;
+      background-color: #fff !important;
+      color: #1e8df4;
+  }
+
+
+  .panel-heading {
+      color: #fff !important;
+      background-color: #1e8df4 !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #1e8df4;
+      color: #fff;
+  }
+```
+
+
+- Mempercantik Navbar
+
+```css
+  .navbar {
+      margin-bottom: 0;
+      background-color: #1e8df4;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #1e8df4 !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #1e8df4 !important;
+  }
+```
+
+
+- Mempercantik Footer
+
+```css
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #1e8df4;
+  }
+
+```
+
+
+- Tambahan supaya lebih cantik kita buat animation :v
+
+```css
+
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+```
+
+- Membuat tampilan web responsiv di ukuran 768px dan 480px
+
+```css
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+```
 
  ### Coming Soon Gan , Masih Tahap Revisi :v
 

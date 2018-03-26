@@ -553,8 +553,6 @@ Membuat posisi aktif pada menu saat mouse di scroll kebawah
 - Membuat Testimoni dengan Carousel
 
 ```html
-
-
   <h2>Testimoni</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
@@ -815,7 +813,8 @@ Membuat posisi aktif pada menu saat mouse di scroll kebawah
 
 - Membuat Item ,bagian testimoni
 
-  ```css
+```css
+
 .item h4 {
       font-size: 19px;
       font-weight: 400;

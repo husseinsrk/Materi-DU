@@ -874,6 +874,7 @@ Membuat posisi aktif pada menu saat mouse di scroll kebawah
 - Mempercantik Navbar
 
 ```css
+
   .navbar {
       margin-bottom: 0;
       background-color: #1e8df4;

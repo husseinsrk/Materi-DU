@@ -647,4 +647,48 @@ Membuat posisi aktif pada menu saat mouse di scroll kebawah
   </div>
 ```
 
+- Membuat Container (Contact Section)
+
+```html
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <br>  
+  <div class="row">
+    <div class="col-sm-5">
+        <p>Anda bisa menghubungi kami di :</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Universitas Dian Nuswatoro</p>
+      <p><span class="glyphicon glyphicon-phone"></span> 081218181282</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> admin@doscdev.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+- Membuat Footer
+
+```html
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>DoscDev Theme Made By <a href="https://doscom.org" title="">Doscom</a></p>
+</footer>
+```
+
 

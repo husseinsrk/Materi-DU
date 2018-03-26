@@ -700,7 +700,5 @@ Membuat posisi aktif pada menu saat mouse di scroll kebawah
 
 - Mempercantik Tampilan dengan css tambahan
 
-```html
-
-```
+ ### Coming Soon Gan , Masih Tahap Revisi :v
 

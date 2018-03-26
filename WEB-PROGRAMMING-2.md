@@ -194,4 +194,98 @@ Glyphicons dapat digunakan dalam teks, tombol, toolbar, navigasi, bentuk, dll
 Link referensi icon:
 https://getbootstrap.com/docs/3.3/components/
 
-coming soon.....
+#### Badges
+ 
+ Lencana adalah indikator numerik dari berapa banyak item yang terkait dengan link: 
+
+```html
+  <button type="button" class="btn btn-primary">Artikel <span class="badge">7</span></button>
+  <button type="button" class="btn btn-success">Comments <span class="badge">3</span></button>    
+  <button type="button" class="btn btn-danger">Cerita <span class="badge">5</span></button>      
+```
+
+#### Pagination
+
+Jika kamu memiliki situs web dengan banyak halaman, kamu mungkin bisa menambahkan beberapa jenis pagination untuk setiap halaman.
+
+```html
+  <ul class="pagination">
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+  </ul>
+```
+
+#### Navigation Bar
+ Sebuah bar navigasi adalah header navigasi yang ditempatkan di bagian atas halaman (Menu) 
+
+```html
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+```
+
+#### Form
+
+```html
+ <div class="form-group">
+	
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" required="required">
+    </div>
+    
+
+    <div class="form-group">
+      <label for="pwd">Nama</label>
+      <input type="text" class="form-control" id="pwd" placeholder="Nama Kamu" required="required">
+    </div>
+	
+
+	<div class="form-group">
+      <label for="comment">Comment:</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+	
+    <div class="form-check">
+      <label class="form-check-label">
+       <input class="form-check-input" type="checkbox">Berlangganan Newsletter 
+      </label>
+    </div>
+	
+  <br>
+    <button type="submit" class="btn btn-primary">Kirim</button>
+  ```
+
+
+

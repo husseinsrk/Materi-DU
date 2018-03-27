@@ -967,7 +967,7 @@ Membuat posisi aktif pada menu saat mouse di scroll kebawah
   }
 ```
 
-- Membuat animasi scroll
+- Membuat animasi scroll dengan javascript
 
 ```js
 <script>
@@ -1009,6 +1009,9 @@ $(document).ready(function(){
 
 ```
 
-
- ### Coming Soon Gan , Masih Tahap Revisi :v
+ 
+---
+#### credits:
+- [w3schools](https://www.w3schools.com/)
+- [doscom](http://doscom.org/)
 

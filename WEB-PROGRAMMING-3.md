@@ -1,6 +1,6 @@
 ## PHP : Input Data Ke Database
 
-### 1 . Membuat Page pendaftar
+### 1 . Membuat Page pendaftar.php
 
 ```php
 

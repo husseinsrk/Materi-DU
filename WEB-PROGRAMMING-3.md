@@ -11,7 +11,7 @@
 ```
 
 
-### 2. Membuat send_pendaftar
+### 2. Membuat send_pendaftar.php
 
 ```php
 
@@ -19,7 +19,7 @@
 ```
 
 
-### 3. Membuat config 
+### 3. Membuat config.php
 
 ```php
 
@@ -29,7 +29,12 @@
 
 ### 4. Membuat form pesan di index.php
 
-``
+```php
+
+```
+
+### 5. Membuat send_pesan.php
+
 
 
 

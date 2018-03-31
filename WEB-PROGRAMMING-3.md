@@ -35,6 +35,16 @@
 
 ### 5. Membuat send_pesan.php
 
+```php
 
 
 
+```
+
+
+
+### 6. Membuat Database di phpmyadmin
+
+```sql
+
+```

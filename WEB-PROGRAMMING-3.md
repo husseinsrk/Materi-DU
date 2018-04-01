@@ -76,10 +76,16 @@ Sedangkan kalau kalian menggunakan POST pada method-nya, maka nilai dari value y
 
  action, action pada form di atas bisa di istilahkan sebagai navigator, pada saat tombol Submit di klik nanti si tombol ini akan ‘nanya‘ ke action, data-data yang sudah kalian input ini mau di proses dimana, lalu si action bilang, di "send_pendaftar.php" aja oleh karena itu untuk action kita isi nama file "send_pendaftar.php" agar data input-nya bisa di proses di file tersebut.
 
+
+ type, type atau tipe input dalam istilah yang lebih mudahnya yaitu jenis kolom, kalau kolomnya untuk input nama berarti tipe input-nya ‘text‘, kalau buat email berarti tipe inputnya ‘email‘, kalau buat nomor berarti tipe input-nya ‘number‘, begitu seterusnya, attributnya sendiri bermacam-macam, jelasnya kalian bisa lihat di link berikut.
+
+ https://www.w3schools.com/tags/att_input_type.asp
+
+ name, name akan berfungsi sebagai nama dari kolom input itu sendiri, name perlu di isi karena nanti berfungsi sebagai ‘inisial‘ di dalam file proses php
+
 ### 2. Membuat send_pendaftar.php
 
 ```php
-
 <?php
 if (isset($_POST['nickname']) && $_POST['nickname']) {
     // memasukan file koneksi ke database

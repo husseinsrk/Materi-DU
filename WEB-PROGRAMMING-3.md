@@ -121,9 +121,12 @@ if (isset($_POST['nickname']) && $_POST['nickname']) {
 
 isset digunakan untuk menyatakan variabel sudah diset atau tidak. Jika variabel sudah diset makan variabel akan mengembalikan nilai true, sebaliknya akan bernilai false maka dia akan berjalan ke proses false yang kita buat
 
-Insert into digunakan untuk memasukan data yang kita buat kedalam database
-
 require_once digunakan ketika file tidak ditemukan maka script akan berhenti
+
+ECHO, perintah PHP yang akan menampilkan deskripsi yang kita masukan. Pada skrip di atas, perintah ECHO akan menampilkan ‘Input data berhasil‘ jika nilai berhasil di input jika salah dia akan menampilkan kalimat error yang kita buat sebelumnya die config.php
+
+Insert into digunakan untuk memasukan data yang kita buat kedalam tabel database
+
 
 ### 3. Membuat config.php
 

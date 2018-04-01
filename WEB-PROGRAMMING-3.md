@@ -146,6 +146,11 @@ if ($dbconnect->connect_error) {
 
 ```
 
+Skrip di atas merupakan skrip untuk koneksi ke database-nya, sebenarnya ada banyak skrip yang bisa kita gunakan untuk mengkoneksikan PHP ke database, salah satunya skrip di atas.
+
+$dbconnect, berfungsi untuk memberikan akses ke dalam database dengan memberikan autentikasi yang berupa nama host, user dan pass sebagai data login-nya.
+
+or die;, akan menampilkan pesan error jika terjadi kesalahan pada saat proses autentikasi.
 
 ### 4. Membuat form pesan di index.php
 

@@ -65,8 +65,8 @@
 
 ```
 
-method, pada bagian ‘method‘ yang di huruf tebal di atas boleh kalian isi ‘post‘ atau ‘get‘, perbedaan POST dan GET ini kurang lebih penjelasannya sebagai berikut.
-Kalau kalian perhatikan pada form di atas terdapat 3 value, yaitu name="", data input dari ketiga value ini yang akan di proses di file send_pendaftar.php nanti, kalau kalian menggunakan GET, setelah di submit maka nilai dari value yang kalian masukan akan tampil di URL browser kalian.
+ method, pada bagian ‘method‘ yang di huruf tebal di atas boleh kalian isi ‘post‘ atau ‘get‘, perbedaan POST dan GET ini kurang lebih penjelasannya sebagai berikut.Kalau kalian perhatikan pada form di atas terdapat 3 value, yaitu name="", data input dari ketiga value ini yang akan di proses di file send_pendaftar.php nanti, kalau kalian menggunakan GET, setelah di submit maka nilai dari value yang kalian masukan akan tampil di URL browser kalian 
+
 
     http://localhost/satu.php?name=otong&email=otong@gmail.com&telp=082373843
 
@@ -74,8 +74,7 @@ Sedangkan kalau kalian menggunakan POST pada method-nya, maka nilai dari value y
 
     http://localhost/send_pendaftar.php
 
-action, action pada form di atas bisa di istilahkan sebagai navigator, pada saat tombol Submit di klik nanti si tombol ini akan ‘nanya‘ ke action, data-data yang sudah kalian input ini mau di proses dimana, lalu si action bilang, ‘di send_pendaftar.php aja…‘, oleh karena itu untuk action kita isi nama file
- send_pendaftar.php agar data input-nya bisa di proses di file tersebut.
+ action, action pada form di atas bisa di istilahkan sebagai navigator, pada saat tombol Submit di klik nanti si tombol ini akan ‘nanya‘ ke action, data-data yang sudah kalian input ini mau di proses dimana, lalu si action bilang, di "send_pendaftar.php" aja oleh karena itu untuk action kita isi nama file "send_pendaftar.php" agar data input-nya bisa di proses di file tersebut.
 
 ### 2. Membuat send_pendaftar.php
 

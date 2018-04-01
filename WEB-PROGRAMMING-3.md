@@ -65,6 +65,14 @@
 
 ```
 
+method, pada bagian ‘method‘ yang di huruf tebal di atas boleh kalian isi ‘post‘ atau ‘get‘, perbedaan POST dan GET ini kurang lebih penjelasannya sebagai berikut.
+Kalau kalian perhatikan pada form di atas terdapat 3 value, yaitu name="", data input dari ketiga value ini yang akan di proses di file send_pendaftar.php nanti, kalau kalian menggunakan GET, setelah di submit maka nilai dari value yang kalian masukan akan tampil di URL browser kalian.
+
+    http://localhost/satu.php?name=otong&email=otong@gmail.com&telp=082373843
+
+Sedangkan kalau kalian menggunakan POST pada method-nya, maka nilai dari value yang kalian masukan tidak akan di tampilkan.
+
+    http://localhost/send_pendaftar.php
 
 ### 2. Membuat send_pendaftar.php
 

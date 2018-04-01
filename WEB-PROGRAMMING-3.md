@@ -3,7 +3,7 @@
 ### 1 . Membuat Page pendaftar.php
 
 
-Coding Pertemuan 2 bisa kalian download di 
+Coding Pertemuan 2 bisa kalian download di https://github.com/rizkimufti/Materi-DU/tree/master/assets/Coding-pt2
 
 
 ```php

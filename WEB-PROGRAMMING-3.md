@@ -2,6 +2,10 @@
 
 ### 1 . Membuat Page pendaftar.php
 
+
+Coding Pertemuan 2 bisa kalian download di 
+
+
 ```php
 
 <html lang="en">

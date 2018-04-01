@@ -123,7 +123,7 @@ isset digunakan untuk menyatakan variabel sudah diset atau tidak. Jika variabel 
 
 Insert into digunakan untuk memasukan data yang kita buat kedalam database
 
-
+require_once digunakan ketika file tidak ditemukan maka script akan berhenti
 
 ### 3. Membuat config.php
 

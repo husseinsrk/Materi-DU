@@ -119,6 +119,11 @@ if (isset($_POST['nickname']) && $_POST['nickname']) {
 
 ```
 
+isset digunakan untuk menyatakan variabel sudah diset atau tidak. Jika variabel sudah diset makan variabel akan mengembalikan nilai true, sebaliknya akan bernilai false maka dia akan berjalan ke proses false yang kita buat
+
+Insert into digunakan untuk memasukan data yang kita buat kedalam database
+
+
 
 ### 3. Membuat config.php
 

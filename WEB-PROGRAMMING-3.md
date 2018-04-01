@@ -387,3 +387,7 @@ ALTER TABLE `users`
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 ```
+
+Pada kode diatas kamu dapat membuat sebuah tabel dengan perintah CREATE TABLE. Kemudian ada tipe data berupa INT, VARCHAR, TEXT, DATETIME dan TIMESTAMP. Untuk tipe data VARCHAR kamu harus menentukan berapa panjang maksimal dari kolom tersebut. Tipe INT dapat kamu tentukan panjang angka yang akan digunakan. Sedangkan TIMESTAMP akan selalu diisi secara otomatis oleh MySQL saat baris baru dibuat.
+
+Kemudian ada juga atribut tambahan NOT NULL dimana kolom tersebut tidak boleh kosong saat proses insert. Kemudian ada penentuan PRIMARY KEY dimana kolom tersebut akan menjadi pembeda antar kolom agar mencegah data dengan id sama memiliki dua baris yang sama.

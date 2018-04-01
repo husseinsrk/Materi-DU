@@ -74,6 +74,9 @@ Sedangkan kalau kalian menggunakan POST pada method-nya, maka nilai dari value y
 
     http://localhost/send_pendaftar.php
 
+action, action pada form di atas bisa di istilahkan sebagai navigator, pada saat tombol Submit di klik nanti si tombol ini akan ‘nanya‘ ke action, data-data yang sudah kalian input ini mau di proses dimana, lalu si action bilang, ‘di send_pendaftar.php aja…‘, oleh karena itu untuk action kita isi nama file
+ send_pendaftar.php agar data input-nya bisa di proses di file tersebut.
+
 ### 2. Membuat send_pendaftar.php
 
 ```php

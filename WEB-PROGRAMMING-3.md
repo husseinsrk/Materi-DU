@@ -637,3 +637,14 @@ if ( isset($_POST['username']) && isset($_POST['password']) ) {
 }
 
 ```
+
+- membuat Halaman logut
+
+```php
+<?php
+session_start();
+session_destroy();
+header('location:login.php');
+?>
+```
+

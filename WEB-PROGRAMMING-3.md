@@ -401,3 +401,239 @@ Auto increment field pada sql adalah suatu tipe field integer yang secara otomat
 Otomatis disini artinya pada saat kita memasukkan data baik melalui stement INSERT maupun melalui mekanisme data access lainnya, field tersebut tidak perlu dimasukkan nilainya atau cukup diberi nilai NULL, maka sql akan menentukan sendiri nilai apa yang akan diberikan sebagai akibat penambahan baris data tersebut.
 
 ALTER TABLE adalah salah satu perintah di database MySQL untuk merubah struktur table baik itu merubah nama table, merubah nama kolom, merubah tipe data, dan lain-lain.
+
+
+## Membuat Admin Section
+
+- membuat register admin
+
+```php
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Halaman Registrasi</title>
+
+    <link href="css/style.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="cssblog/blog-home.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+
+    <div class="col-md-4 col-md-offset-4 form-login">
+    
+    <?php
+    /* handle error */
+    if (isset($_GET['error'])) : ?>
+        <div class="alert alert-warning alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <strong>Warning!</strong> <?=base64_decode($_GET['error']);?>
+        </div>
+    <?php endif;?>
+
+        <div class="outter-form-login">
+           
+            <form action="send_register.php" class="inner-login" method="post">
+            <h3 class="text-center title-login">Registrasi</h3>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="nickname" placeholder="Nama">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" name="username" placeholder="Username">
+                </div>
+
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+
+                <div class="form-group">
+                    <input type="password" class="form-control" name="repassword" placeholder="Re-Password">
+                </div>
+
+                <input type="submit" class="btn btn-block btn-custom-green" value="Daftar" />
+                
+                <div class="text-center forget">
+                    <p>Back To <a href="./login.php">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+```
+
+- Membuat send_register
+
+```php
+
+<?php
+if (isset($_POST['nickname']) && $_POST['nickname']) {
+    // memasukan file koneksi ke database
+    require_once 'config.php';
+    // menyimpan variable yang dikirim Form
+    $nama = $_POST['nickname'];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $repassword = $_POST['repassword'];
+    // cek nilai variable
+    if (empty($nama)) {
+        header('location: ./register.php?error=' .base64_encode('Nama tidak boleh kosong'));
+    }
+    if (empty($username)) {
+        header('location: ./register.php?error=' .base64_encode('Username tidak boleh kosong'));   
+    }
+    if (empty($password)) {
+        header('location: ./register.php?error=' .base64_encode('Password tidak boleh kosong'));   
+    }
+    // validasi apakah password dengan repassword sama
+    if ($password != $repassword) { // jika tidak sama
+        header('location: ./register.php?error=' .base64_encode('Password tidak boleh sama'));   
+    }
+    // encryption dengan md5
+    $password = md5($password);
+    $level = 'member'; // default, 
+    // SQL Insert
+    $sql = "INSERT INTO users (nama, username, password, level_user) VALUES ('$nama', '$username', '$password', '$level')";
+    $insert = $dbconnect->query($sql);
+    // jika gagal
+    if (! $insert) {
+        echo "<script>alert('".$dbconnect->error."'); window.location.href = './register.php';</script>";
+    } else {
+        echo "<script>alert('Insert Data Berhasil'); window.location.href = './login.php';</script>";
+    }
+}
+?>
+
+```
+
+- Membuat Halaman Login
+
+```php
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Halaman Login</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+  </head>
+  <body>
+
+    <div class="col-md-4 col-md-offset-4 form-login">
+    
+    <?php
+    /* handle error */
+    if (isset($_GET['error'])) : ?>
+        <div class="alert alert-warning alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <strong>Warning!</strong> <?=base64_decode($_GET['error']);?>
+        </div>
+    <?php endif;?>
+
+        <div class="outter-form-login">
+      
+            <form action="check-login.php" class="inner-login" method="post">
+            <h3 class="text-center title-login">Login Member</h3>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="username" placeholder="Username">
+                </div>
+
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+                
+                <input type="submit" class="btn btn-block btn-custom-green" value="Login" />
+                
+                <div class="text-center forget">
+                    <p>Lupa Password ?</p>
+                </div>
+                <div class="text-center ">
+                    <a href="register.php">Belum Daftar ?</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+  </body>
+</html>
+
+```
+- Membuat check login
+
+```php
+<?php
+session_start();
+require 'config.php';
+
+if ( isset($_POST['username']) && isset($_POST['password']) ) {
+    
+    $sql_check = "SELECT nama, 
+                         level_user, 
+                         id_user 
+                  FROM users 
+                  WHERE 
+                       username=? 
+                       AND 
+                       password=? 
+                  LIMIT 1";
+
+    $check_log = $dbconnect->prepare($sql_check);
+    $check_log->bind_param('ss', $username, $password);
+
+    $username = $_POST['username'];
+    $password = md5( $_POST['password'] );
+
+    $check_log->execute();
+
+    $check_log->store_result();
+
+    if ( $check_log->num_rows == 1 ) {
+        $check_log->bind_result($nama, $level_user, $id_user);
+
+        while ( $check_log->fetch() ) {
+            $_SESSION['user_login'] = $level_user;
+            $_SESSION['sess_id']    = $id_user;
+            $_SESSION['nama']       = $nama;
+            
+        }
+
+        $check_log->close();
+
+        header('location:on-'.$level_user);
+        exit();
+
+    } else {
+        header('location: login.php?error='.base64_encode('Username dan Password Invalid!!!'));
+        exit();
+    }
+
+   
+} else {
+    header('location:login.php');
+    exit();
+}
+
+```
